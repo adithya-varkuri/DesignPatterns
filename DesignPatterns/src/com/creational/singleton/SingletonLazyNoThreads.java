@@ -4,21 +4,22 @@ package com.creational.singleton;
  * Singleton with Lazy initialization
  *
  */
-public class SingletonNoThreads {
+public class SingletonLazyNoThreads {
 	
 	// static variable single_instance of type Singleton 
-	private static SingletonNoThreads obj = null;
+	private static SingletonLazyNoThreads obj = null;
 	public String name;
 	
 	// private constructor restricted to this class itself 
-	private  SingletonNoThreads() {
-		name = "singleton" ;
+	private  SingletonLazyNoThreads() {
+		name = "SingletonLazyNoThreads" ;
+		System.out.println(name);
 	}
 	
 	//create instance
-	public static SingletonNoThreads getObj() {
+	public static SingletonLazyNoThreads getObj() {
 		if(obj == null)
-			obj= new SingletonNoThreads();
+			obj= new SingletonLazyNoThreads();
 		return obj;
 	}
 }

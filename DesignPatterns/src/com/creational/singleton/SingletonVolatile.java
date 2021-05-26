@@ -32,8 +32,4 @@ public class SingletonVolatile {
 		return obj;
 	}
 
-
-
-
-
 }

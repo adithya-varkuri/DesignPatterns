@@ -12,7 +12,8 @@ public class SingletonThreadSafe {
 	
 	// private constructor restricted to this class itself 
 	private  SingletonThreadSafe() {
-		name = "singleton" ;
+		name = "SingletonThreadSafe" ;
+		System.out.println(name);
 	}
 	
 	//create instance

@@ -13,7 +13,8 @@ public class SingletonEagerInit {
 	
 	// private constructor restricted to this class itself 
 	private  SingletonEagerInit() {
-		name = "singleton" ;
+		name = "SingletonEagerInit" ;
+		System.out.println(name);
 	}
 	
 	//create instance
